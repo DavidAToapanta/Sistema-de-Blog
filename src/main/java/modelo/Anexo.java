@@ -3,24 +3,31 @@ package modelo;
 import java.util.Arrays;
 
 public class Anexo {
+
     private int idAnexo;
-    private int comentarioidComeentario;
-    private String nombreComentario;
-    private byte[] extension;
+    private String nombreArchivo;
+    private byte[] archivo;   // El BYTEA
     private double peso;
 
-    public Anexo() {
+    private Comentario comentario; // Relación muchos a uno
 
+    public Anexo() {
     }
 
-    public Anexo(int idAnexo, int comentarioidComeentario,  String nombreComentario, byte[] extension, double peso) {
-        this.idAnexo = idAnexo;
-        this.comentarioidComeentario = comentarioidComeentario;
-        this.nombreComentario = nombreComentario;
-        this.extension = extension;
+    public Anexo(String nombreArchivo, byte[] archivo, double peso) {
+        this.nombreArchivo = nombreArchivo;
+        this.archivo = archivo;
         this.peso = peso;
     }
 
+    public Anexo(String nombreArchivo, byte[] archivo, double peso, Comentario comentario) {
+        this.nombreArchivo = nombreArchivo;
+        this.archivo = archivo;
+        this.peso = peso;
+        this.comentario = comentario;
+    }
+
+    // Getters y setters
     public int getIdAnexo() {
         return idAnexo;
     }
@@ -29,28 +36,20 @@ public class Anexo {
         this.idAnexo = idAnexo;
     }
 
-    public String getNombreComentario() {
-        return nombreComentario;
+    public String getNombreArchivo() {
+        return nombreArchivo;
     }
 
-    public void setNombreComentario(String nombreComentario) {
-        this.nombreComentario = nombreComentario;
+    public void setNombreArchivo(String nombreArchivo) {
+        this.nombreArchivo = nombreArchivo;
     }
 
-    public int getComentarioidComeentario() {
-        return comentarioidComeentario;
+    public byte[] getArchivo() {
+        return archivo;
     }
 
-    public void setComentarioidComeentario(int comentarioidComeentario) {
-        this.comentarioidComeentario = comentarioidComeentario;
-    }
-
-    public byte[] getExtension() {
-        return extension;
-    }
-
-    public void setExtension(byte[] extension) {
-        this.extension = extension;
+    public void setArchivo(byte[] archivo) {
+        this.archivo = archivo;
     }
 
     public double getPeso() {
@@ -61,17 +60,25 @@ public class Anexo {
         this.peso = peso;
     }
 
+    public Comentario getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(Comentario comentario) {
+        this.comentario = comentario;
+    }
+
     @Override
     public String toString() {
         return "Anexo{" +
                 "idAnexo=" + idAnexo +
-                ", comentarioidComeentario=" + comentarioidComeentario +
-                ", nombreComentario='" + nombreComentario + '\'' +
-                ", extension=" + Arrays.toString(extension) +
+                ", nombreArchivo='" + nombreArchivo + '\'' +
+                ", archivo=" + Arrays.toString(archivo) +
                 ", peso=" + peso +
                 '}';
     }
-
-
 }
+
+
+
 

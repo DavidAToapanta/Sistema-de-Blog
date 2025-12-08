@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/main/java/ConexionBD/Conexion.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Anexo.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Autor.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Comentario.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Publicaciones.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Tags.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Telefono.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Ubicacion.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/modelo/Usuarios.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/src/main/java/main.java;C:/Users/boliv/OneDrive/Documentos/Programacion 1/SistemaDeBlog/README.md" />
+  </component>
+</project>
