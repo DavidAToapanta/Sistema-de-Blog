@@ -70,10 +70,8 @@ public class LoginView extends JFrame {
             JOptionPane.showMessageDialog(this, "Alias o contraseña incorrectos.");
         } else {
             JOptionPane.showMessageDialog(this, "Bienvenido " + usuario.getNombre());
-
-            // ✨ Aquí abrirás Dashboard (lo haremos después)
-            // new DashboardView(usuario).setVisible(true);
-            // dispose();
+            new vista.dashboard.DashboardView(usuario).setVisible(true);
+            dispose();
         }
     }
 
